@@ -1,0 +1,62 @@
+/*JOKER FANSITE
+=================
+=================
+Background
+=================*/
+.indexBg {
+    display: fixed;
+    background-color: black;
+}
+
+.jokerFace {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    left: 35%;
+}
+/*===============
+Nav Bar
+=================*/
+#sideNav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 180px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Bangers', cursive;
+    font-size: 20px; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 30px 30px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#sideNav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#biography {
+    top: 20px;
+    background-color: #141414;
+}
+
+#presentation {
+    top: 80px;
+    background-color: #141414;
+}
+
+#photography {
+    top: 140px;
+    background-color: #141414;
+}
+
+#goodies {
+    top: 200px;
+    background-color: #141414;
+}
+
+#contact {
+    top: 260px;
+    background-color: #141414;
+}
