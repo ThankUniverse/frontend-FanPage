@@ -37,26 +37,36 @@ Nav Bar
 
 /* The about link: 20px from the top with a green background */
 #biography {
-    top: 20px;
+    top: 100px;
     background-color: #141414;
 }
 
 #presentation {
-    top: 80px;
+    top: 170px;
     background-color: #141414;
 }
 
 #photography {
-    top: 140px;
+    top: 240px;
     background-color: #141414;
 }
 
 #goodies {
-    top: 200px;
+    top: 310px;
     background-color: #141414;
 }
 
 #contact {
-    top: 260px;
+    top: 380px;
     background-color: #141414;
 }
+/*=============*/
+
+.fansiteFont { 
+    position: absolute;
+    font-family:'Permanent Marker', cursive;  /*FANSITE font-family*/
+    color: white; /*font color*/
+    text-align: center;
+    left: 75%;
+    top: 20%;
+    } 
