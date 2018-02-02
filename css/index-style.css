@@ -1,5 +1,6 @@
 /*JOKER FANSITE
 =================
+Landing Page
 =================
 Background
 =================*/
@@ -65,8 +66,8 @@ Nav Bar
 .fansiteFont { 
     position: absolute;
     font-family:'Permanent Marker', cursive;  /*FANSITE font-family*/
-    color: white; /*font color*/
+    color: #ECEAF0; /*font color*/
     text-align: center;
     left: 75%;
-    top: 20%;
+    top: 15%;
     } 
