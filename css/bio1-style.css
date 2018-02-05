@@ -73,7 +73,16 @@ Nav Bar
 .mainPic {
 
     background-size: cover;
-    width:100%; 
+    width:100%;
+}
+
+.bulle {
+    position : absolute;
+    right: 12px; 
+    width: 120%;
+    height: 110%;
+    opacity: 0.3;
+    z-index: 0;
 }
 
 /*==================
