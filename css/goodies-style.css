@@ -1,0 +1,77 @@
+body {
+  background-image: url(../img/Boutique/arkham.png);
+  repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.boutique {
+  width: 400px;
+  height: 530px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+ .figurine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+input {
+  width: 25px;
+}
+img {
+  width: 150px;
+  height: 200px;
+  border: 2px black solid;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.batte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dentier {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-right: 20px;
+}
+.t-shirt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.panier {
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 530px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-right: auto;
+}
+.panier h1 {
+  font-size: 30px;
+}
