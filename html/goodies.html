@@ -52,22 +52,27 @@
         <img src="../img/Boutique/dentier.jpg" alt="image figurine">
         <p class="prix">8.99€</p>
         <input id="dentierInput" type="number" name="qte" value="0">
-        <button type="button" name="acheter">Ajouter au panier</button>
+        <button type="button" name="acheter" onclick="getQtDentier();">Ajouter au panier</button>
       </div>
       <div class="t-shirt">
         <img src="../img/Boutique/t-shirt-J.jpg" alt="image figurine">
         <p class="prix">5.99€</p>
-        <input id="t-shirtInput" type="number" name="qte" value="0">
-        <button type="button" name="acheter">Ajouter au panier</button>
+        <input id="tShirtInput" type="number" name="qte" value="0">
+        <button type="button" name="acheter" onclick="getQtTShirt();">Ajouter au panier</button>
 
       </div>
     </section>
     <!-- Panier =============================================-->
     <section class="panier">
       <h1>Votre panier <i class="fas fa-shopping-basket"></i></h1>
-      <p id="inPanier">Votre panier est vide</p>
+      <ul>
+        <li id="inPanier"></li>
+        <li id="inPanier2"></li>
+        <li id="inPanier3"></li>
+        <li id="inPanier4"></li>
+      </ul>
       <p id="total">Total: </p>
-      <button type="button" name="payer">Payer</button>
+      <button type="button" name="payer" onclick="getPrice();">Payer</button>
     </section>
   </section>
   <!-- Fin panier et boutique =====================================-->

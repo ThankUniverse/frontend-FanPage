@@ -75,3 +75,12 @@ padding-right: 20px;
 .panier h1 {
   font-size: 30px;
 }
+.panier ul {
+  margin: 0px;
+  text-align: center;
+  padding: 0px;
+}
+.panier li {
+  list-style-type: none;
+  text-align: center;
+}
