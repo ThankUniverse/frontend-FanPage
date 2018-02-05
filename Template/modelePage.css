@@ -1,6 +1,6 @@
 /*JOKER FANSITE
 =================
-Landing Page
+Put the name of the Page HERE
 =================
 Background
 =================*/
@@ -9,12 +9,6 @@ Background
     background-color: black;
 }
 
-.jokerFace {
-    position: absolute;
-    height: 90%;
-    width: auto;
-    left: 35%;
-}
 /*===============
 Nav Bar
 =================*/
@@ -34,10 +28,15 @@ Nav Bar
 
 #sideNav a:hover {
     left: 0; /* On mouse-over, make the elements appear as they should */
-    box-shadow: 0px 0px 25px white;
+    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow appear around the element*/
 }
 
 /* The about link: 20px from the top with a green background */
+#home {
+    top: 30px;
+    background-color: #141414;
+
+}
 #biography {
     top: 100px;
     background-color: #141414;
@@ -62,13 +61,37 @@ Nav Bar
     top: 380px;
     background-color: #141414;
 }
-/*=============*/
+/*==============================================================================
+                        CODE HERE INSIDE PLEASE !
+================================================================================*/
 
-.fansiteFont { 
-    position: absolute;
-    font-family:'Permanent Marker', cursive;  /*FANSITE font-family*/
-    color: #ECEAF0; /*font color*/
-    text-align: center;
-    left: 75%;
-    top: 15%;
-    } 
+
+
+
+
+/*==============================================================================*/
+
+/*==================
+FOOTER
+====================*/
+
+footer {
+    background-color: black;
+    font-family: "Open", sans-serif;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+}
+footer a {
+    margin: 0 20px;
+    bottom: 20px;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+}
