@@ -113,6 +113,13 @@ Nav Bar
 #message {
   height:60px;
 }
+/* MEDIA QUERIES */
+@media (min-width: 1157px;){
+  .bulleImage img {
+    left: 100px;
+    top: 0px;
+  }
+}
 /*==============================================================================*/
 
 /*==================
