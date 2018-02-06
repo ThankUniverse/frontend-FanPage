@@ -114,10 +114,15 @@ Nav Bar
   height:60px;
 }
 /* MEDIA QUERIES */
-@media (min-width: 1157px;){
+@media (max-width: 1157px){
   .bulleImage img {
-    left: 100px;
+    display: none;
+  }
+  .bulleText {
+    position: fixed;
     top: 0px;
+    left: 120px;
+    background-color: rgba(0,255,255,0.7);
   }
 }
 /*==============================================================================*/
