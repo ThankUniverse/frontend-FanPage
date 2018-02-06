@@ -1,0 +1,158 @@
+/*JOKER FANSITE
+=================
+Put the name of the Page HERE
+=================
+Background
+=================*/
+
+.indexBg {
+    display: fixed;
+    background-color: black;
+}
+
+/*===============
+Nav Bar
+=================*/
+#sideNav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 180px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Bangers', cursive;
+    font-size: 20px; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 30px 30px 0; /* Rounded corners on the top right and bottom right side */
+    z-index: 50;
+}
+
+#sideNav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px red; /* On mouse-over, a shadow appear around the element*/
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+    top: 30px;
+    background-color: #141414;
+
+}
+#biography {
+    top: 100px;
+    background-color: #141414;
+}
+
+#presentation {
+    top: 170px;
+    background-color: #141414;
+}
+
+#photography {
+    top: 240px;
+    background-color: #141414;
+}
+
+#goodies {
+    top: 310px;
+    background-color: #141414;
+}
+
+#contact {
+    top: 380px;
+    background-color: #141414;
+}
+/*==============================================================================
+                        IMAGE CSS
+================================================================================*/
+.photoJoker{
+    position: fixed;
+    width: 90%;
+    left: 0px;
+    top: 12px;
+
+}
+
+.smile{
+    position: absolute;
+    height: 100%;
+    right: 65px;
+    top: -2px;
+}
+
+.whiteFlag {
+    position: fixed;
+    height: 30%;
+    left: 0px;
+    bottom: 25px;
+}
+/*==============================================================================
+LIGHTBOX
+================================================================================*/
+
+.thumbnail {
+    position: relative;
+    max-width: 15%;
+    z-index: 80;
+    margin: 35% 10px auto 30px;
+}
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    /** Unhide lightbox **/
+    display: block;
+}
+
+
+/*==============================================================================*/
+
+/*==================
+FOOTER
+====================*/
+
+footer {
+    background-color: black;
+    font-family: "Open", sans-serif;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+}
+footer a {
+    margin: 0 20px;
+    bottom: 20px;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+}
