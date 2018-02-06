@@ -71,11 +71,7 @@ Nav Bar
 BOUTIQUE ET PANIER
 ================================= */
 
-body {
-  background-image: url(../img/Boutique/arkham.png);
-  repeat: no-repeat;
-  background-size: cover;
-}
+/* Effet sur la nav bar */
 .gradient {
   position: absolute;
   left: 0px;
@@ -83,25 +79,34 @@ body {
   height: 100%;
   z-index: 0;
 }
+/* CONTAINER */
 .container {
   display: flex;
   flex-direction: row;
 }
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+
+}
+/* BOUTIQUE */
 .boutique {
   width: 400px;
-  height: 550px;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-left: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 50px;
   padding-bottom: 50px;
   border-radius: 20%;
   position: absolute;
-  right: 550px;
+  right: 500px;
 }
 
  .figurine {
@@ -116,13 +121,20 @@ input {
 }
 .boutique img {
   width: 150px;
-  height: 200px;
+  height: 150px;
   border: 2px black solid;
 }
 .boutique p {
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: "Oswald", sans-serif;
+  color: white;
+}
+.boutique h3 {
+  font-family: "Bangers", sans-serif;
+  color: #19FF5A;
+  margin: 0px;
+  padding-bottom: 5px;
 }
 .batte {
   display: flex;
@@ -143,12 +155,13 @@ padding-right: 20px;
   align-items: center;
   justify-content: center;
 }
+/* PANIER */
 .panier {
   background-color: rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 550px;
+  height: auto;
   justify-content: center;
   align-items: center;
   color: white;
@@ -161,8 +174,9 @@ padding-right: 20px;
   right: 20px;
 }
 .panier h1 {
-  font-size: 30px;
+  font-size: 50px;
   font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
 }
 .panier ul {
   margin: 0px;
@@ -173,6 +187,7 @@ padding-right: 20px;
   list-style-type: none;
   text-align: center;
 }
+/* BOUTONS */
 .boutique button {
   background-color: Transparent;
   border-radius: 5%;
@@ -180,13 +195,21 @@ padding-right: 20px;
   padding: 5px;
   margin: 5px;
   font-family: "Bangers", sans-serif;
-  color: green;
+  color: #19FF5A;
 }
 .boutique button:hover {
     box-shadow: 0px 0px 25px #19FF5A;
 }
 .panier button {
-
+  background-color: Transparent;
+  border-radius: 5%;
+  border: darkgreen 2px solid;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+  font-size: 25px;
+}
+.panier button:hover {
+  box-shadow: 0px 0px 25px #19FF5A;
 }
 
 /*==================

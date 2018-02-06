@@ -7,7 +7,6 @@
   </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/bio-style.css">
   <link rel="stylesheet" href="../css/goodies-style.css">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Oswald|Open+sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +14,7 @@
   <script type="text/javascript" src="../JS/main.js"></script>
 </head>
 
-<body bgcolor="black">
+<body bgcolor="#870DFF">
   <div class="indexBg">
     <!--==================
 	 NAV SIDE BUTTON
@@ -32,37 +31,45 @@
 
   <!--CODE HERE PLEASE ===========================================================================!-->
   <!-- Boutique =================================================-->
-  <img class="gradient" src="../img/Boutique/gradient.png" alt="">
-  <section class="container">
 
+  <!-- image gradient "effets" sur les boutons de la nav -->
+  <img class="gradient" src="../img/Boutique/gradient.png" alt="">
+
+  <!-- container de la boutique et du panier -->
+  <div class="container">
+    <img src="../img/Boutique/arkham.png" id="background" alt="">
+    <!-- BOUTIQUE -->
     <section class="boutique">
       <div class="figurine">
+        <h3>Figurine</h3>
         <img src="../img/Boutique/figurine.jpg" alt="image figurine">
         <p class="prix">7.99€</p>
         <input id="figurineInput" type="number" name="qte" value="0">
         <button type="button" name="acheter" onclick="getQtFigurine();">Ajouter au panier</button>
       </div>
       <div class="batte">
+        <h3>Batte</h3>
         <img src="../img/Boutique/batte.jpg" alt="image figurine">
         <p class="prix">6.99€</p>
         <input id="batteInput" type="number" name="qte" value="0">
         <button type="button" name="acheter" onclick="getQtBatte();">Ajouter au panier</button>
       </div>
       <div class="dentier">
+        <h3>Dentier</h3>
         <img src="../img/Boutique/dentier.jpg" alt="image figurine">
-        <p class="prix">8.99€</p>
+        <p class="prix">3.99€</p>
         <input id="dentierInput" type="number" name="qte" value="0">
         <button type="button" name="acheter" onclick="getQtDentier();">Ajouter au panier</button>
       </div>
       <div class="t-shirt">
+        <h3>T-shirt</h3>
         <img src="../img/Boutique/t-shirt-J.jpg" alt="image figurine">
         <p class="prix">5.99€</p>
         <input id="tShirtInput" type="number" name="qte" value="0">
         <button type="button" name="acheter" onclick="getQtTShirt();">Ajouter au panier</button>
-
       </div>
     </section>
-    <!-- Panier =============================================-->
+    <!-- PANIER =============================================-->
     <section class="panier">
       <h1>Panier <i class="fas fa-shopping-basket"></i></h1>
       <ul>
@@ -74,7 +81,7 @@
       <p id="total">Total: 0€</p>
       <button type="button" name="payer" onclick="getPrice();">Payer</button>
     </section>
-  </section>
+  </div>
   <!-- Fin panier et boutique =====================================-->
 </body>
 <!-- =================

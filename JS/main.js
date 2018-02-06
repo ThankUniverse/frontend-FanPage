@@ -5,7 +5,7 @@ let qtBatte = document.getElementById('batteInput').value;
 let qtDentier = document.getElementById("dentierInput").value;
 let qtTShirt = document.getElementById('tShirtInput').value;
 document.getElementById('inPanier').innerHTML = qtFigurine + " Figurine(s)";//rajoute la quantité de figurine dans panier
-let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 8.99 + qtTShirt * 5.99;
+let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 3.99 + qtTShirt * 5.99;
 document.getElementById("total").innerHTML = "Total: " + total +"€";
 };
 
@@ -16,7 +16,7 @@ function getQtBatte(){
   let qtDentier = document.getElementById("dentierInput").value;
   let qtTShirt = document.getElementById('tShirtInput').value;
   document.getElementById('inPanier2').innerHTML = qtBatte +" Batte(s)";
-  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 8.99 + qtTShirt * 5.99;
+  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 3.99 + qtTShirt * 5.99;
   document.getElementById("total").innerHTML = "Total: " + total +"€";
 };
 //function qte dentier + prix
@@ -26,7 +26,7 @@ function getQtDentier(){
   let qtDentier = document.getElementById("dentierInput").value;//prend valeur de l'input
   let qtTShirt = document.getElementById('tShirtInput').value;
   document.getElementById("inPanier3").innerHTML = qtDentier + " Dentier(s)";
-  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 8.99 + qtTShirt * 5.99;
+  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 3.99 + qtTShirt * 5.99;
   document.getElementById("total").innerHTML = "Total: " + total +"€";
 };
 //function qte t-shirt + prix
@@ -36,7 +36,7 @@ function getQtTShirt(){
   let qtDentier = document.getElementById("dentierInput").value;
   let qtTShirt = document.getElementById('tShirtInput').value;
   document.getElementById('inPanier4').innerHTML = qtTShirt + " T-shirt(s)";
-  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 8.99 + qtTShirt * 5.99;
+  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 3.99 + qtTShirt * 5.99;
   document.getElementById("total").innerHTML = "Total: " + total +"€";
 };
 function getPrice(){
@@ -44,6 +44,6 @@ function getPrice(){
   let qtBatte = document.getElementById('batteInput').value;
   let qtDentier = document.getElementById("dentierInput").value;
   let qtTShirt = document.getElementById('tShirtInput').value;
-  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 8.99 + qtTShirt * 5.99;
-  alert(total + "€" );
+  let total = qtBatte * 6.99 + qtFigurine * 7.99 + qtDentier * 3.99 + qtTShirt * 5.99;
+  alert("Payer " + total + "€" );
   }
