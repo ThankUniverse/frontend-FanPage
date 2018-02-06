@@ -1,6 +1,6 @@
 /*JOKER FANSITE
 =================
-Put the name of the Page HERE
+CONTACT
 =================
 Background
 =================*/
@@ -28,7 +28,7 @@ Nav Bar
 
 #sideNav a:hover {
     left: 0; /* On mouse-over, make the elements appear as they should */
-    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow appear around the element*/
+    box-shadow: 0px 0px 25px #B02BCF; /* On mouse-over, a shadow appear around the element*/
 }
 
 /* The about link: 20px from the top with a green background */
@@ -61,14 +61,58 @@ Nav Bar
     top: 380px;
     background-color: #141414;
 }
-/*==============================================================================
-                        CODE HERE INSIDE PLEASE !
-================================================================================*/
-
-
-
-
-
+/* effet noir gradient sur nav bar à gauche*/
+#gradient {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  z-index: -5;
+}
+/* BACKGROUND */
+.contact img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+}
+/* BULLE IMAGE */
+.bulleImage img {
+  position: absolute;
+  width: 620px;
+  height: 550px;
+  top: 45px;
+  left: 520px;
+  opacity: 0.7;
+}
+/* TEXT dans la bulle */
+ .bulleText  {
+  position: absolute;
+  top: 60px;
+  left: 700px;
+  z-index: 10;
+  width: auto;
+  height: auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 8px;
+}
+/* Formulaire */
+.formContact {
+  display: flex;
+  flex-direction: column;
+  }
+  .formContact input {
+    border-radius: 5%;
+    border: 1px black solid;
+  }
+#message {
+  height:60px;
+}
 /*==============================================================================*/
 
 /*==================
