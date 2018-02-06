@@ -1,0 +1,238 @@
+/*JOKER FANSITE
+=================
+Biographie Page
+=================
+Background
+=================*/
+body {
+    margin: 0;
+}
+
+.indexBg {
+    display: fixed;
+    background-color: black;
+}
+
+/*===============
+Nav Bar
+=================*/
+#sideNav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 180px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Bangers', cursive;
+    font-size: 20px; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 30px 30px 0; /* Rounded corners on the top right and bottom right side */
+    z-index: 50;
+}
+
+#sideNav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #19FF5A; /*On mouse-over, a shadow appear around the element*/
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+    top: 30px;
+    background-color: #141414;
+
+}
+#biography {
+    top: 100px;
+    background-color: #141414;
+}
+
+#presentation {
+    top: 170px;
+    background-color: #141414;
+}
+
+#photography {
+    top: 240px;
+    background-color: #141414;
+}
+
+#goodies {
+    top: 310px;
+    background-color: #141414;
+}
+
+#contact {
+    top: 380px;
+    background-color: #141414;
+}
+
+/* ==============================
+BOUTIQUE ET PANIER
+================================= */
+
+/* Effet sur la nav bar */
+.gradient {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  z-index: 0;
+}
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+
+}
+/* BOUTIQUE */
+.boutique {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 20%;
+  position: absolute;
+  right: 500px;
+}
+
+ .figurine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+input {
+  width: 25px;
+}
+.boutique img {
+  width: 150px;
+  height: 150px;
+  border: 2px black solid;
+}
+.boutique p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+.boutique h3 {
+  font-family: "Bangers", sans-serif;
+  color: #19FF5A;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+.batte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dentier {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-right: 20px;
+}
+.t-shirt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* PANIER */
+.panier {
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  border: black 2px solid;
+  border-radius: 20%;
+  position: absolute;
+  right: 20px;
+}
+.panier h1 {
+  font-size: 50px;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+}
+.panier ul {
+  margin: 0px;
+  text-align: center;
+  padding: 0px;
+}
+.panier li {
+  list-style-type: none;
+  text-align: center;
+}
+/* BOUTONS */
+.boutique button {
+  background-color: Transparent;
+  border-radius: 5%;
+  border: darkgreen 2px solid;
+  padding: 5px;
+  margin: 5px;
+  font-family: "Bangers", sans-serif;
+  color: #19FF5A;
+}
+.boutique button:hover {
+    box-shadow: 0px 0px 25px #19FF5A;
+}
+.panier button {
+  background-color: Transparent;
+  border-radius: 5%;
+  border: darkgreen 2px solid;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+  font-size: 25px;
+}
+.panier button:hover {
+  box-shadow: 0px 0px 25px #19FF5A;
+}
+
+/*==================
+FOOTER
+====================*/
+
+footer {
+    background-color: black;
+    font-family: "Open", sans-serif;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+}
+footer a {
+    margin: 0 20px;
+    bottom: 20px;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+}
