@@ -89,9 +89,16 @@ Nav Bar
     bottom: 10px;
     right: 550px;
     justify-content: center;
-    box-shadow: 
     z-index:1;
     
+}
+
+.killingJoke:hover {
+    box-shadow: 10px 10px 18px green;
+}
+
+.suicideSquad:hover {
+    box-shadow: 10px 10px 18px red;
 }
 
 .suicideSquadTxt {
@@ -112,6 +119,7 @@ Nav Bar
     z-index: 1;
 }
 
+
 /*==============================================================================*/
 
 /*==================
@@ -130,6 +138,7 @@ footer {
     color: gray;
     text-decoration: none;
     text-align: left;
+    z-index: 10;
 }
 footer a {
     margin: 0 20px;
