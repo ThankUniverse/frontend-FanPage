@@ -36,7 +36,9 @@ Nav Bar
     left: 0; /* On mouse-over, make the elements appear as they should */
     box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow appear around the element*/
 }
-
+#navBarResponsive{
+  display: none;
+}
 /* The about link: 20px from the top with a green background */
 #home {
     top: 30px;
@@ -69,7 +71,7 @@ Nav Bar
 }
 /*==============================================================================
 Pictures in Page
-================================================================================*/ 
+================================================================================*/
 .mainPic {
 
     background-size: cover;
@@ -87,7 +89,7 @@ Pictures in Page
 
 .bulle {
     position : absolute;
-    right: -90px; 
+    right: -90px;
     width: 130%;
     height: 110%;
     opacity: 0.3;
@@ -127,12 +129,12 @@ SCROLL BOX
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #28F277;  
+    background: #28F277;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #28F277;  
+    background: #28F277;
 }
 
 /*=======================================
@@ -160,7 +162,7 @@ p {
     font-family: "Bangers", sans-serif;
     font-size: 18px;
     z-index: 50;
-} 
+}
 .greenText:hover {
     box-shadow: 0px 0px 35px #19FF5A;
     background-color: #19FF5A;
@@ -193,4 +195,61 @@ footer a {
     background-color: black;
     color: gray;
     text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1157px){
+
+  .gradient {
+  display: none;
+}
+ .harleyDance {
+   display: none;
+ }
+ .halo {
+   display: none;
+ }
+  #background{
+  opacity: 1;
+}
+  #navBarResponsive {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  text-align: center;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.7);
+}
+  #navBarResponsive a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+  padding: 5px;
+  margin: 5px;
+  background-color: Transparent;
+
+}
+#navBarResponsive a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow */
+}
+
+  #sideNav {
+  display: none;
+}
+.scrollBoxAjust {
+  left: 50px;
+  position: absolute;
+  top: 170px;
+}
+.linkBox {
+  padding-bottom: 40px;
+}
+.streetJoker {
+  display: none;
+}
 }

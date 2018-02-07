@@ -113,18 +113,10 @@ Nav Bar
 #message {
   height:60px;
 }
-/* MEDIA QUERIES */
-@media (max-width: 1157px){
-  .bulleImage img {
-    display: none;
-  }
-  .bulleText {
-    position: fixed;
-    top: 0px;
-    left: 120px;
-    background-color: rgba(0,255,255,0.7);
-  }
+#navBarResponsive {
+  display: none;
 }
+
 /*==============================================================================*/
 
 /*==================
@@ -150,4 +142,54 @@ footer a {
     background-color: black;
     color: gray;
     text-decoration: none;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1157px){
+  .bulleImage img {
+    display: none;
+  }
+  .bulleText {
+    position: fixed;
+    top: 350px;
+    left: 0px;
+    background-color: rgba(225,255,255,0.7);
+    width: 400px;
+    height: auto;
+  }
+  .bulleText p {
+    display: none;
+  }
+
+  #gradient {
+  display: none;
+}
+  #background{
+  opacity: 1;
+}
+  #navBarResponsive {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  text-align: center;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.7);
+}
+  #navBarResponsive a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+  padding: 5px;
+  margin: 5px;
+  background-color: Transparent;
+}
+#navBarResponsive a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow */
+}
+  #sideNav {
+  display: none;
+}
 }
