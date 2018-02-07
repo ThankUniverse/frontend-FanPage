@@ -5,14 +5,14 @@ Joker FanSite Présentation Page
 Background
 =================*/
 body {
-    background: linear-gradient(to right, #BF17E6, #8EE80C);
-    background-size: cover;
-    margin: 0px;
-    height: 100%;
+    background: linear-gradient(120deg, #630066, #72FF19); /*Background gradient*/
+    background-size: cover; /* the background take all the screen*/
+    margin: 0px;/* no margin into the body*/
+    height: 100%; /*height of te body 100%*/
     overflow: hidden;
 }
 .indexBg {
-    display: fixed;
+    display: fixed; /*avoid scroll issue*/
     
 }
 
@@ -26,12 +26,12 @@ Nav Bar
     padding: 15px; /* 15px padding */
     width: 180px; /* Set a specific width */
     text-decoration: none; /* Remove underline */
-    font-family: 'Bangers', cursive;
+    font-family: 'Bangers', cursive; /*Font-family having a "Comics" look*/
     font-size: 20px; /* Increase font size */
-    text-align: right;
+    text-align: right; /*Text inside the black element is aligned to the right*/
     color: white; /* White text color */
     border-radius: 0 30px 30px 0; /* Rounded corners on the top right and bottom right side */
-    z-index: 50;
+    z-index: 50; /*Avoid superposition issue : 50 is the maximum reference used for this website*/
 }
 
 #sideNav a:hover {
@@ -41,39 +41,39 @@ Nav Bar
 
 /* The first nav link is home: 30px from the top with a green background */
 #home {
-    top: 30px;
-    background-color: #141414;
+    top: 30px; /*Position from the top*/
+    background-color: #141414; /*Bg-color*/
 
 }
 #biography {
     top: 100px;
-    background-color: #141414;
+    background-color: #141414; /*Bg-color*/
 }
 
 #presentation {
     top: 170px;
-    background-color: #141414;
+    background-color: #141414; /*Bg-color*/
 }
 
 #photography {
     top: 240px;
-    background-color: #141414;
+    background-color: #141414; /*Bg-color*/
 }
 
 #goodies {
     top: 310px;
-    background-color: #141414;
+    background-color: #141414; /*Bg-color*/
 }
 
 #contact {
     top: 380px;
-    background-color: #141414;
+    background-color: #141414; /*Bg-color*/
 }
 /*==============================================================================
                         CODE HERE INSIDE PLEASE !
 ================================================================================*/
 
-.killingJokeTxt {
+.killingJokeTxt {       /*Text behind the first Picture "Killing Joke*/
     position: absolute;
     width: 25%;
     bottom: 100px;
@@ -83,7 +83,7 @@ Nav Bar
     z-index: 0;
 }
 
-.killingJoke {
+.killingJoke {          /* Picture "Killing Joke*/
     position: absolute;
     width: 38%;
     bottom: 10px;
@@ -93,15 +93,15 @@ Nav Bar
     
 }
 
-.killingJoke:hover {
-    box-shadow: 10px 10px 18px green;
+.killingJoke:hover {    /*On hover of the first pic " KillingJoke */
+    box-shadow: 0px 0px 30px green; /*Halo effect around the killing Joke pic on hover*/
 }
 
-.suicideSquad:hover {
-    box-shadow: 10px 10px 18px red;
+.suicideSquad:hover {   /*On hover of the second pic "Suicide Squad" */
+    box-shadow: 0px 0px 30px red; /*Halo effect around the suicide Squad pic on hover*/
 }
 
-.suicideSquadTxt {
+.suicideSquadTxt {      /*Text behind the first Picture "suicide Squad*/
     position: absolute;
     width: 25%;
     bottom: 100px;
@@ -111,7 +111,7 @@ Nav Bar
     z-index: 0;
 }
 
-.suicideSquad {
+.suicideSquad {     /*Picture "Suicide Squad*/
     position: absolute;
     width: 38%;
     bottom: 10px;

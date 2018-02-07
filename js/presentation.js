@@ -1,21 +1,20 @@
-// Fade Effect on the killing Joke picture 
-
-let picLef
-
+//  Right pic move on mouseenter on the left  
 $("#killingJoke").mouseenter(function(){
-    $("#killingJoke").slideUp("slow");
-
-    if $("")
+    $("#suicideSquad").animate({"top": "-660px"});
+});
+// reset as default
+$("#killingJoke").mouseleave(function(){
+	$("#suicideSquad").animate({"top": "0px"});
 });
 
-
-// Fade Effect on the suicide Squad picture 
-
+//  left pic move on mouseenter on the right  
 $("#suicideSquad").mouseenter(function(){
-    $("#suicideSquad").slideDown("slow");
-    $("#killingJoke").slideDown();
+    $("#killingJoke").animate({"bottom": "-680px"});
 });
-// Fade Effect back on the suicide Squad picture 
+
+// reset as default state
 $("#suicideSquad").mouseleave(function(){
-	$("#suicideSquad").slideDown("slow");
+	$("#killingJoke").animate({"bottom": "10px"});
 });
+
+//*ThankUniverse :)
