@@ -39,7 +39,7 @@ Nav Bar
     box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow appear around the element*/
 }
 
-/* The about link: 20px from the top with a green background */
+/* The first nav link is home: 30px from the top with a green background */
 #home {
     top: 30px;
     background-color: #141414;
@@ -74,36 +74,42 @@ Nav Bar
 ================================================================================*/
 
 .killingJokeTxt {
-    position: fixed;
+    position: absolute;
     width: 25%;
     bottom: 100px;
     right: 100px;
     color: white;
     text-align: left;
+    z-index: 0;
 }
+
+.killingJoke {
+    position: absolute;
+    width: 38%;
+    bottom: 10px;
+    right: 550px;
+    justify-content: center;
+    box-shadow: 
+    z-index:1;
+    
+}
+
 .suicideSquadTxt {
-    position: fixed;
+    position: absolute;
     width: 25%;
     bottom: 100px;
     left: 370px;
     color: white;
     text-align: right;
+    z-index: 0;
 }
 
 .suicideSquad {
-    position: fixed;
+    position: absolute;
     width: 38%;
     bottom: 10px;
     right: 10px;
-
-}
-
-.killingJoke {
-    position: fixed;
-    width: 38%;
-    bottom: 10px;
-    right: 550px;
-    
+    z-index: 1;
 }
 
 /*==============================================================================*/

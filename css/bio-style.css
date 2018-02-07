@@ -160,5 +160,17 @@ Image Size & position
     width: 25%;
     height: auto;
     left: 35%;
+    animation-name: jokerOpacityChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes jokerOpacityChange {
+    0%   {opacity: 1;}
+    50%  {opacity: 0.5;}
+    100%  {opacity: 1;}
+}
+
+
+
 
