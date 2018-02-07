@@ -1,8 +1,8 @@
 
 //  Right pic move on mouseenter on the left  
 $("#killingJoke").mouseenter(function(){
-	setTimeout(function(){
-
+    $("#suicideSquad").animate({"top": "-660px"});
+});
 // reset as default
 $("#killingJoke").mouseleave(function(){
 	$("#suicideSquad").animate({"top": "0px"});
