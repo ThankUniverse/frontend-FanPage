@@ -1,0 +1,181 @@
+/*JOKER FANSITE
+=================
+Joker FanSite Présentation Page
+=================
+Background
+=================*/
+body {
+    background: linear-gradient(120deg, #630066, #72FF19); /*Background gradient*/
+    background-size: cover; /* the background take all the screen*/
+    margin: 0px;/* no margin into the body*/
+    height: 100%; /*height of te body 100%*/
+    overflow: hidden;
+}
+.indexBg {
+    display: fixed; /*avoid scroll issue*/
+    
+}
+
+/*===============
+Nav Bar
+=================*/
+#sideNav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 180px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Bangers', cursive; /*Font-family having a "Comics" look*/
+    font-size: 20px; /* Increase font size */
+    text-align: right; /*Text inside the black element is aligned to the right*/
+    color: white; /* White text color */
+    border-radius: 0 30px 30px 0; /* Rounded corners on the top right and bottom right side */
+    z-index: 50; /*Avoid superposition issue : 50 is the maximum reference used for this website*/
+}
+
+#sideNav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow appear around the element*/
+/*animation halo on hover*/
+    animation-name: halOpacity;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*========
+Animation sideNav
+==========*/
+@keyframes halOpacity {
+   0%       {box-shadow: 0px 0px 25px purple;}
+   50%      {box-shadow: 0px 0px 5px purple;}
+   100%     {box-shadow: 0px 0px 25px purple;}
+}
+
+/* The first nav link is home: 30px from the top with a green background */
+#home {
+    top: 30px; /*Position from the top*/
+    background-color: #141414; /*Bg-color*/
+
+}
+#biography {
+    top: 100px;
+    background-color: #141414; /*Bg-color*/
+}
+
+#presentation {
+    top: 170px;
+    background-color: #141414; /*Bg-color*/
+}
+
+#photography {
+    top: 240px;
+    background-color: #141414; /*Bg-color*/
+}
+
+#goodies {
+    top: 310px;
+    background-color: #141414; /*Bg-color*/
+}
+
+#contact {
+    top: 380px;
+    background-color: #141414; /*Bg-color*/
+}
+/*==============================================================================
+                        CODE HERE INSIDE PLEASE !
+================================================================================*/
+
+.killingJokeTxt {       /*Text behind the first Picture "Killing Joke*/
+    position: absolute;
+    width: 25%;
+    bottom: 100px;
+    right: 100px;
+    color: white;
+    text-align: left;
+    z-index: 0;
+}
+
+.killingJoke {          /* Picture "Killing Joke*/
+    position: absolute;
+    width: 38%;
+    bottom: 10px;
+    right: 550px;
+    justify-content: center;
+    z-index:1;
+    
+}
+
+.killingJoke:hover {    /*On hover of the first pic " KillingJoke */
+    box-shadow: 0px 0px 30px green; /*Halo effect around the killing Joke pic on hover*/
+    animation-name: haloGreen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.suicideSquad:hover {   /*On hover of the second pic "Suicide Squad" */
+    box-shadow: 0px 0px 30px purple; /*Halo effect around the suicide Squad pic on hover*/
+    animation-name: haloPurple;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes haloGreen {
+    0%      {box-shadow: 0px 0px 40px green;}
+    50%     {box-shadow: 0px 0px 10px green;}
+    100%    {box-shadow: 0px 0px 40px green;}
+}
+
+@keyframes haloPurple {
+    0%      {box-shadow: 0px 0px 40px purple;}
+    50%     {box-shadow: 0px 0px 10px purple;}
+    100%    {box-shadow: 0px 0px 40px purple;}
+}
+
+
+.suicideSquadTxt {      /*Text behind the first Picture "suicide Squad*/
+    position: absolute;
+    width: 25%;
+    bottom: 100px;
+    left: 370px;
+    color: white;
+    text-align: right;
+    z-index: 0;
+}
+
+.suicideSquad {     /*Picture "Suicide Squad*/
+    position: absolute;
+    width: 38%;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+
+/*==============================================================================*/
+
+/*==================
+FOOTER
+====================*/
+
+footer {
+    background-color: black;
+    font-family: "Open", sans-serif;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+    z-index: 10;
+}
+footer a {
+    margin: 0 20px;
+    bottom: 20px;
+    background-color: black;
+    color: gray;
+    text-decoration: none;
+}
