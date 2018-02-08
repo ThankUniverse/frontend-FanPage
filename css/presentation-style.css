@@ -13,7 +13,7 @@ body {
 }
 .indexBg {
     display: fixed; /*avoid scroll issue*/
-    
+
 }
 
 /*===============
@@ -42,7 +42,9 @@ Nav Bar
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-
+#navBarResponsive {
+  display: none;
+}
 /*========
 Animation sideNav
 ==========*/
@@ -103,7 +105,7 @@ Animation sideNav
     right: 550px;
     justify-content: center;
     z-index:1;
-    
+
 }
 
 .killingJoke:hover {    /*On hover of the first pic " KillingJoke */
@@ -179,3 +181,52 @@ footer a {
     color: gray;
     text-decoration: none;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1157px) {
+  #gradient {
+  display: none;
+}
+  #navBarResponsive {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  text-align: center;
+  z-index: 20;
+  background-color: rgba(0,0,0,0.7);
+}
+  #navBarResponsive a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Bangers", sans-serif;
+  color:  #19FF5A;
+  padding: 5px;
+  margin: 5px;
+  background-color: Transparent;
+}
+#navBarResponsive a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+    box-shadow: 0px 0px 25px #19FF5A; /* On mouse-over, a shadow */
+}
+  #sideNav {
+  display: none;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+#killingJoke, #suicideSquad {
+  display: none;
+}
+
+.killingJokeTxt {
+  text-align: left;
+  left: 0px;
+  top: 80px;
+}
+.suicideSquadTxt {
+  left: 150px;
+  top: 80px;
+  }

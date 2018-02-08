@@ -126,6 +126,26 @@ Animation sideNav
     border-radius: 5%;
     border: 1px black solid;
   }
+  #btn-contact {
+    background-color: #19FF5A;
+    border-radius: 5%;
+    border: darkgreen 2px solid;
+    padding: 5px;
+    padding-left: 170px;
+    padding-right: 170px;
+    margin: 5px;
+    font-family: "Bangers", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  #btn-contact:hover {
+    box-shadow: 0px 0px 25px #19FF5A;
+  }
+  .boutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 #message {
   height:60px;
 }

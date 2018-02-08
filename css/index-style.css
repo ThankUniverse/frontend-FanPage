@@ -78,11 +78,33 @@ Animation sideNav
 }
 /*=============*/
 
-.fansiteFont { 
+.fansiteFont {
     position: absolute;
     font-family:'Permanent Marker', cursive;  /*FANSITE font-family*/
     color: #ECEAF0; /*font color*/
     text-align: center;
     left: 75%;
     top: 15%;
-    } 
+    }
+/* MEDIA QUERIES */
+@media (max-width: 1157px) {
+  #sideNav {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    text-align: left;
+  }
+  .jokerFace {
+    position: absolute;
+    z-index: -120;
+    left: 70px;
+    top: 120px;
+  }
+  .fansiteFont  {
+    z-index: 50;
+    top: 0%;
+    left: 0px;
+    text-align: left;
+    position: relative;
+  }
+}

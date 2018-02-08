@@ -182,7 +182,7 @@ body {
   display: none;
 }
 .photoJoker {
-  top: 80px;
+  top: 100px;
   left: 20px;
 }
 .whiteFlag {
@@ -194,7 +194,7 @@ body {
   max-width: 100%;
   margin-top: 20px;
   top: 200px;
-  left: 15px;
+  left: 75px;
 }
 .lightbox img {
     /** Pad the lightbox image */
