@@ -1,5 +1,5 @@
 
-//  Right pic move on mouseenter on the left  
+//  Right pic move on mouseenter on the left
 $("#killingJoke").mouseenter(function(){
     $("#suicideSquad").animate({"top": "-660px"});
 });
@@ -19,4 +19,3 @@ $("#suicideSquad").mouseleave(function(){
 });
 
 //*ThankUniverse :)
-
