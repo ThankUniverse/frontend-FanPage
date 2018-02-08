@@ -197,7 +197,6 @@ body {
   left: 75px;
 }
 .lightbox img {
-    /** Pad the lightbox image */
     margin-top: 5px;
 }
   #background{
