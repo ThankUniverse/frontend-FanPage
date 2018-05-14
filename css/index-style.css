@@ -4,16 +4,24 @@ Landing Page
 =================
 Background
 =================*/
+body {
+    overflow: hidden;
+}
 .indexBg {
     display: fixed;
     background-color: black;
 }
-
-.jokerFace {
+#container-joker {
+    width: 100%;
+    height: 100%;
+    perspective: 30px;
+}
+#jokerFace {
     position: absolute;
-    height: 90%;
+    height: 45em;
     width: auto;
     left: 35%;
+    transition: 0.5s;
 }
 /*===============
 Nav Bar
@@ -86,7 +94,10 @@ Animation sideNav
     left: 75%;
     top: 15%;
     }
-/* MEDIA QUERIES */
+
+/*=================
+MEDIA QUERIES 
+===================*/
 @media (max-width: 1157px) {
   #sideNav {
     position: absolute;
@@ -102,8 +113,8 @@ Animation sideNav
   }
   .fansiteFont  {
     z-index: 50;
-    top: 0%;
-    left: 0px;
+    top: 20%;
+    right: 0px;
     text-align: left;
     position: relative;
   }

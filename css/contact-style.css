@@ -102,10 +102,10 @@ Animation sideNav
   opacity: 0.4;
 }
 /* TEXT dans la bulle */
- .bulleText  {
+ .bulleText {
   position: absolute;
   top: 60px;
-  left: 685px;
+  left: 62%;
   z-index: 10;
   width: auto;
   height: auto;
@@ -124,16 +124,16 @@ Animation sideNav
   }
   .formContact input {
     border-radius: 5%;
-    border: 1px black solid;
+    border: 0px transparent solid;
   }
   #btn-contact {
     background-color: #19FF5A;
-    border-radius: 5%;
-    border: darkgreen 2px solid;
+    border-radius: 70px;
+    border: transparent 0px solid;
     padding: 5px;
     padding-left: 170px;
     padding-right: 170px;
-    margin: 5px;
+    margin: 10px;
     font-family: "Bangers", sans-serif;
     color: white;
     font-size: 20px;

@@ -6,6 +6,7 @@ Background
 =================*/
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .indexBg {
@@ -109,20 +110,16 @@ BOUTIQUE ET PANIER
 }
 /* BOUTIQUE */
 .boutique {
-  width: 400px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-radius: 20%;
-  position: absolute;
-  right: 500px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 17%;
+    padding-top: 17%;
+    position: absolute;
 }
 
  .figurine {
@@ -139,6 +136,7 @@ input {
   width: 150px;
   height: 150px;
   border: 2px black solid;
+  border-radius: 100px;
 }
 .boutique p {
   margin-top: 5px;
@@ -173,7 +171,6 @@ padding-right: 20px;
 }
 /* PANIER */
 .panier {
-  background-color: rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -184,8 +181,6 @@ padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 50px;
   margin-right: auto;
-  border: black 2px solid;
-  border-radius: 20%;
   position: absolute;
   right: 20px;
 }
@@ -222,7 +217,7 @@ padding-right: 20px;
   border: darkgreen 2px solid;
   font-family: "Bangers", sans-serif;
   color:  #19FF5A;
-  font-size: 25px;
+  font-size: 40px;
 }
 .panier button:hover {
   box-shadow: 0px 0px 25px #19FF5A;
